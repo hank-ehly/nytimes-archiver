@@ -25,3 +25,4 @@ if __name__ == '__main__':
 
     df = fetch_archive_data()
     df.to_sql(name=DB_TABLE, con=connection, if_exists='append', index=False)
+
