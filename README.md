@@ -2,7 +2,7 @@
 
 Demonstrates how to pull data from the New York Times archive API and insert it into a mysql database.
 
-#### Setup
+### Setup
 
 ##### 1. Install pip packages
 ```commandline
@@ -11,7 +11,7 @@ pip install requirements
 
 ##### 2. Create mysql db
 ```mysql
-CREATE DATABASE IF NOT EXISTS nytimes_archive DEFAULT CHARACTER SET UTF8MB4;
+CREATE DATABASE IF NOT EXISTS [db] DEFAULT CHARACTER SET UTF8MB4;
 ```
 
 ##### 3. Update variables in `settings.py` variables
@@ -21,7 +21,7 @@ CREATE DATABASE IF NOT EXISTS nytimes_archive DEFAULT CHARACTER SET UTF8MB4;
 python archive.py
 ```
 
-#### License
+### License
 
 The MIT License (MIT)
 
