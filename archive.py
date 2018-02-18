@@ -24,4 +24,4 @@ if __name__ == '__main__':
     connection = create_engine('mysql+mysqldb://%s:%s@%s:%i/%s' % (DB_USER, DB_PASS, DB_HOST, DB_PORT, DB_NAME))
 
     df = fetch_archive_data()
-    df.to_sql(name=DB_TABLE, con=connection)
+    df.to_sql(name=DB_TABLE, con=connection, if_exists='append', index=False)

@@ -12,6 +12,7 @@ pip install requirements
 ##### 2. Create mysql db
 ```mysql
 CREATE DATABASE IF NOT EXISTS [db] DEFAULT CHARACTER SET UTF8MB4;
+GRANT ALL PRIVILEGES ON [db].* TO [user]@[host] IDENTIFIED BY [password];
 ```
 
 ##### 3. Update variables in `settings.py` variables
