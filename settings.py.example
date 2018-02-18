@@ -1,0 +1,7 @@
+NYTIMES_ARCHIVE_API_KEY = ''
+DB_NAME = 'nytimes'
+DB_TABLE = 'docs'
+DB_PORT = 3306
+DB_USER = 'nytimes'
+DB_PASS = 'nytimes'
+DB_HOST = 'localhost'
