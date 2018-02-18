@@ -5,7 +5,7 @@ Demonstrates how to pull data from the New York Times archive API and insert it 
 ### Setup
 
 ##### 1. Install pip packages
-```commandline
+```bash
 pip install requirements
 ```
 
@@ -15,10 +15,14 @@ CREATE DATABASE IF NOT EXISTS [db] DEFAULT CHARACTER SET UTF8MB4;
 GRANT ALL PRIVILEGES ON [db].* TO [user]@[host] IDENTIFIED BY [password];
 ```
 
-##### 3. Update variables in `settings.py` variables
+##### 3. Add your local settings
+```bash
+cp settings.py settings.py.example 
+# Now add your API key to settings.py
+```
 
 ##### 4. Run
-```commandline
+```bash
 python archive.py
 ```
 
